@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>নামাজ রুটিং ট্র্যাকার</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7171/7171885.png" type="image/x-icon">
+    <title>স্থায়ী নামাজ ট্র্যাকার</title>
+    <link rel="shortcut icon" href="image/unnamed.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-
     </style>
 </head>
 
 <body>
-    <h1>নামাজ রুটিং ট্র্যাকার</h1>
+    <h1>স্থায়ী নামাজ ট্র্যাকার</h1>
 
     <div class="date-display" id="current-date"></div>
 
@@ -25,8 +24,16 @@
         <!-- Prayer cards will be added here by JavaScript -->
     </div>
 
-    <button class="reset-btn" id="reset-btn">আজকের নামাজ রিসেট করুন</button>
-    <button id="prev-day-btn" class="reset-btn">গতকালের ডেটা দেখুন</button>
+    <div style="text-align: center;">
+        <button class="btn btn-reset" id="reset-btn">আজকের নামাজ রিসেট করুন</button>
+        <button class="btn btn-history" id="history-btn">ইতিহাস দেখুন</button>
+        <button class="btn" id="back-btn" style="display: none;">ফিরে যান</button>
+    </div>
+
+    <div class="history-container" id="history-container">
+        <h2 style="color: white;">নামাজের ইতিহাস</h2>
+        <div id="history-list"></div>
+    </div>
 
     <script src="scrip.js">
 
